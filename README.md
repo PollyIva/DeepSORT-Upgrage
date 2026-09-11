@@ -1,16 +1,16 @@
 # DeepSORT Multi-Object Tracking
 
-Проект по **Multi-Object Tracking** на основе DeepSORT.
+A **Multi-Object Tracking** project based on DeepSORT.
 
-## Цель
+## Goal
 
-Исследовать влияние модели детекции и Person Re-Identification на качество и скорость трекинга.
+Investigate how the detection model and Person Re-Identification affect tracking quality and speed.
 
 ## Pipeline
 
 `Video → Detector → Person ReID → DeepSORT → MOT results → TrackEval`
 
-## Компоненты
+## Components
 
 **Detectors**
 - YOLOv5n
@@ -51,14 +51,14 @@ Metrics: https://github.com/PollyIva/DL_in_CV/blob/main/experiments.csv
 - IDF1
 - HOTA
 
-Для выбора итоговых конфигураций применяется ограничение `FPS >= 5`.
+The `FPS >= 5` constraint is used to select the final configurations.
 
-## Результаты исходного ноутбука
+## Results from the original notebook
 
-После фильтрации `FPS >= 5` в исходном ноутбуке выбиралась конфигурация с максимальным HOTA для каждой последовательности.
+After filtering by `FPS >= 5`, the configuration with the maximum HOTA was selected for each sequence in the original notebook.
 
 | Sequence | Detector | ReID | FPS | MOTA | IDF1 | HOTA |
-|---|---|---|---:|---:|---:|---:|
+|---|---|---:|---:|---:|---:|---:|
 | KITTI-17 | YOLOv5m | ResNet50 | 22.21 | 66.33 | 80.77 | 58.47 |
 | MOT16-09 | YOLOv5l6 | OSNet x0.25 | 6.51 | 45.25 | 51.28 | 42.42 |
 | MOT16-11 | YOLOv5l6 | OSNet x1.0 | 6.58 | 52.31 | 56.85 | 50.49 |
@@ -66,18 +66,16 @@ Metrics: https://github.com/PollyIva/DL_in_CV/blob/main/experiments.csv
 | TUD-Campus | YOLOv5l6 | OSNet x0.25 | 5.79 | 60.17 | 65.21 | 48.71 |
 | TUD-Stadtmitte | YOLOv5n | OSNet x0.25 | 17.66 | 77.85 | 71.36 | 56.17 |
 
-Эти значения перенесены из сохранённых результатов исходного ноутбука; после модульного разбиения код рекомендуется повторно прогнать для проверки воспроизводимости.
+These values were taken from the saved results of the original notebook; after modularizing the code, it is recommended to re-run the pipeline to verify reproducibility.
 
-
-
-## Запуск
+## Running
 
 ```bash
 python main.py
 ```
 
-Для Google Colab необходимо сначала настроить окружение и путь к Google Drive в `ProjectConfig.base_dir`.
+For Google Colab, first configure the environment and the path to Google Drive in `ProjectConfig.base_dir`.
 
-## Исходные материалы
+## Source materials
 
-Исходный ноутбук содержит реализацию детекторов, ReID, DeepSORT, сохранение MOT-результатов, TrackEval и grid search.
+The original notebook contains implementations of detectors, ReID, DeepSORT, MOT result saving, TrackEval, and grid search.
