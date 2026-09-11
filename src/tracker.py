@@ -1,8 +1,8 @@
 """DeepSORT tracking wrapper."""
 
-from deep_sort import nn_matching
-from deep_sort.detection import Detection
-from deep_sort.tracker import Tracker
+from deep_sort.deep_sort import nn_matching
+from deep_sort.deep_sort.detection import Detection
+from deep_sort.deep_sort.tracker import Tracker
 
 
 class DeepSORTWrapper:
@@ -70,10 +70,3 @@ class DeepSORTWrapper:
             })
 
         return results
-
-tracker = DeepSORTWrapper(
-    max_cosine_distance=0.3,
-    nn_budget=100
-)
-detector = create_detector("yolov5n")
-reid = create_reid("osnet_x0_25")

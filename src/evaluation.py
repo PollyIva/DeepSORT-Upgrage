@@ -5,9 +5,9 @@ import shutil
 import tempfile
 import numpy as np
 
-from trackeval import Evaluator
-from trackeval.datasets import MotChallenge2DBox
-from trackeval.metrics import HOTA, CLEAR, Identity
+from TrackEval.trackeval import Evaluator
+from TrackEval.trackeval.datasets import MotChallenge2DBox
+from TrackEval.trackeval.metrics import HOTA, CLEAR, Identity
 
 
 def compute_metrics(sequence_path, pred_file):

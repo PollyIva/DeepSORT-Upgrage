@@ -4,6 +4,12 @@ import numpy as np
 from ultralytics import YOLO
 
 try:
+    import torch
+    DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+except ImportError:
+    DEVICE = "cpu"
+
+try:
     from detectron2.engine import DefaultPredictor
     from detectron2.config import get_cfg
     from detectron2 import model_zoo
@@ -112,7 +118,7 @@ class Detectron2Detector(Detector):
 
 #  Фабрика детекторов
 
-def create_detector(name, conf=0.5, device="cpu"):
+def create_detector(name, conf=0.5, device=DEVICE):
     if name == "yolov5n":
         return YOLOv5Detector("yolov5n.pt", conf=conf, device=device)
     if name == "yolov5m":

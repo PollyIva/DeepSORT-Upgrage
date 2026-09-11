@@ -28,9 +28,15 @@
 - maximum cosine distance
 - NN budget
 
+## Results
+Best Videos: https://drive.google.com/drive/folders/1iYmanHW2JNYxTIGtqarRTaJLcHskqI2Q
+
+All Videos: https://drive.google.com/drive/folders/1A81lj6PQ3d9AP3m4yS6rru7M6FwnuaJ4
+
+Metrics: https://github.com/PollyIva/DL_in_CV/blob/main/experiments.csv
+
 ## Dataset
 
-Используются последовательности:
 - KITTI-17
 - MOT16-09
 - MOT16-11
@@ -62,29 +68,7 @@
 
 Эти значения перенесены из сохранённых результатов исходного ноутбука; после модульного разбиения код рекомендуется повторно прогнать для проверки воспроизводимости.
 
-## Структура
 
-```text
-deepsort_project/
-├── README.md
-├── requirements.txt
-├── main.py
-├── .gitignore
-├── configs/
-│   └── DATA_LAYOUT.md
-├── src/
-│   ├── config.py
-│   ├── detectors.py
-│   ├── reid.py
-│   ├── tracker.py
-│   ├── pipeline.py
-│   ├── evaluation.py
-│   ├── experiment.py
-│   ├── analysis.py
-│   └── utils.py
-└── notebooks/
-    └── DeepSORT_project.ipynb
-```
 
 ## Запуск
 

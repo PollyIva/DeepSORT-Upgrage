@@ -5,6 +5,8 @@ import torch
 import torchreid
 import torchvision.transforms as T
 
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+
 
 class ReIDModel:
     def get_embedding(self, image):
