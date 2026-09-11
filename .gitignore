@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+MOT_datasets/
+cache/
+results/
+videos/
+outputs/
+*.mp4
+*.pth
+*.pt

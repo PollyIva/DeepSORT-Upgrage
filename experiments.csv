@@ -1,0 +1,10 @@
+sequence,detector,reid,conf,cosine_distance,nn_budget,fps,MOTA,IDF1,HOTA
+/root/.cache/kagglehub/datasets/mdraselsarker/mot15-challenge-dataset/versions/1/MOT15/train/TUD-Campus,yolov5n,osnet_x0_25,0.5,0.5,50,2.9001293605425724,nan,nan,
+/root/.cache/kagglehub/datasets/mdraselsarker/mot15-challenge-dataset/versions/1/MOT15/train/TUD-Campus,yolov5m,osnet_x0_25,0.5,0.5,50,0.8197794044415817,nan,nan,
+/root/.cache/kagglehub/datasets/mdraselsarker/mot15-challenge-dataset/versions/1/MOT15/train/TUD-Stadtmitte,yolov5n,osnet_x0_25,0.5,0.5,50,2.7602196720112464,nan,nan,
+/root/.cache/kagglehub/datasets/mdraselsarker/mot15-challenge-dataset/versions/1/MOT15/train/TUD-Stadtmitte,yolov5m,osnet_x0_25,0.5,0.5,50,0.8123951455552886,nan,nan,
+/root/.cache/kagglehub/datasets/mdraselsarker/mot15-challenge-dataset/versions/1/MOT15/train/KITTI-17,yolov5n,osnet_x0_25,0.5,0.5,50,4.570864763752054,nan,nan,
+/root/.cache/kagglehub/datasets/mdraselsarker/mot15-challenge-dataset/versions/1/MOT15/train/KITTI-17,yolov5m,osnet_x0_25,0.5,0.5,50,1.5526304518926182,nan,nan,
+sequence,detector,reid,conf,cosine_distance,nn_budget,fps,MOTA,IDF1,HOTA
+sequence,detector,reid,conf,cosine_distance,nn_budget,fps,MOTA,IDF1,HOTA
+sequence,detector,reid,conf,cosine_distance,nn_budget,fps,MOTA,IDF1,HOTA
